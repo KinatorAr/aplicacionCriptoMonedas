@@ -27,7 +27,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+                "src/assets/css/normalize.css",
+                "src/assets/css/skeleton.css",
+                "src/styles.css"
             ],
             "scripts": []
           },
@@ -92,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
