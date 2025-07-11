@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="one-half column">
+      <img src="../../assets/img/cryptomonedas.png" alt="Imagen Criptoikkmonedas" />
+    </div>
+    <div class="one-half column">
+      <form id="formulario" (submit)="submitFormulario($event)">
+        <div class="row">
+          <label>Elige tu Moneda</label>
+          <select
+            class="u-full-width"
+            id="moneda"
+            name="moneda"
+            (change)="leerValor($event)"
+          >
+            <option value="">Elige tu moneda</option>
+            <option value="USD">Dólar Estadounidense</option>
+            <option value="MXN">Peso Mexicano</option>
+            <option value="GBP">Libras</option>
+            <option value="EUR">Euros</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>Elige tu Criptomoneda</label>
+            <select
+              class="u-full-width"
+              id="criptomonedas"
+              name="criptomoneda"
+              (change)="leerValor($event)"
+            >
+              <option value="">Elige tu criptomoneda</option>
+              <option *ngFor="let cripto of criptomonedas" [value]="cripto.CoinInfo.Name">
+                {{ cripto.CoinInfo.FullName }}
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <input
+          class="button-primary u-full-width"
+          type="submit"
+          value="Cotizar"
+        />
+
+        <div id="resultado" class="resultado"></div>
+      </form>
+    </div>
+  </div>
+</div>
