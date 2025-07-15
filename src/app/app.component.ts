@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CriptomonedasComponent } from '../components/criptomonedas/criptomonedas.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [CriptomonedasComponent],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

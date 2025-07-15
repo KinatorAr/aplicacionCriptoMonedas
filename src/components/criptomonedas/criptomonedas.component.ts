@@ -132,3 +132,4 @@ export class CriptomonedasComponent implements OnInit {
     }
   }
 }
+

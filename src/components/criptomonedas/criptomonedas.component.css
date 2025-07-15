@@ -1,5 +1,5 @@
 .container img {
-    margin-top: 150px;
+    margin-top: 5rem;
 }
 
 .error {
@@ -10,6 +10,26 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+}
+
+.barra{
+  width: 100%;
+  background-color: #334153;
+  padding: 1.5rem 0;
+}
+.botones{
+  display: flex;
+  justify-content: right;
+  padding: 0 1.5rem;
+}
+.botones button{
+  color: #ffffff;
+  border: #ffffff solid 1px;
+  margin: 0;
+}
+.botones button:hover{
+  color: #d0d0d0;
+  border: #d0d0d0 solid 1px;
 }
 
 .resultado {
@@ -34,7 +54,7 @@ p.precio{
 
 @media (min-width:480px) {
     form {
-        margin-top: 150px;
+        margin-top: 5rem;
     }
 }
 
